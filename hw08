@@ -1,0 +1,5 @@
+dic={'d':4, 'b':2, 'c':3, 'e':5, 'a':1, 'f':6, 'g':7}
+
+result = list(dic.values())
+result.sort(reverse = True)
+print(result[:3])

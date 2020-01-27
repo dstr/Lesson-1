@@ -1,0 +1,11 @@
+in_string  = str(input("Input string: "))
+#in_string = "google.com"
+print ('')
+
+in_string  = in_string.lstrip() 
+result = ''
+
+if len(in_string) > 1 :
+    result = in_string [0:2] + in_string [-2:]
+    print ("Result :", result)
+else : print ("String is empty")

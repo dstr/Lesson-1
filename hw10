@@ -1,0 +1,6 @@
+lst1 =[1,2,2,3,4,5,6,7,1,2,3,4,5,6,7,1,2,3]
+lst2 =[1,12,2,13,4,5,6,2,1,2,3,4,5,6,9,8,2,3]
+
+result = list(set(lst1) - set(lst2))
+result.extend(set(lst2) - set(lst1))
+print (result)

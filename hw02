@@ -1,0 +1,11 @@
+in_string  = str(input("Input string: "))
+#in_string = "google.com"
+print ('')
+
+result = {}
+
+for letter in in_string :
+    if letter in result.keys() : result[letter] += 1
+    else : result[letter] = 1
+
+print (result)

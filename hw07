@@ -1,0 +1,7 @@
+dic1={'a':1, 'b':2, 'c':3, 'd':4}
+dic2={'e':5, 'f':6, 'b':7}
+result={}
+result.update(dic1)
+result.update(dic2)
+
+print(result)

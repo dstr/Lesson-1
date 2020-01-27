@@ -1,0 +1,17 @@
+in_string  = str(input("Input name: "))
+#in_string = "adolph BLAINE charles david earl frederick gerald hubert irvin john kenneth lloyd martin nero oliver PAUL Quincy randolph sherman Thomas uncas victor William xerxes Yancy zeus Wolfeschlegelsteinhausenbergerdorffvoralternwarengewissenhaftschaferswessenschafewarenwohlgepflegeundsorgfaltigkeitbeschutzenvonangreifendurchihrraubgierigfeindewelychevoralternzwolftausendjahresvorandieerscheinenwanderersteerdemenschderrassumschiffgebrauchlichtalsseinursprungvonkraftgestartseinlangefahrthinzwischensternartigraumaufdersuchenachdiesternwelchegehabtbewohnbarplanetenkreisedrehensichundwohinderneurassevonverstandigmenschlichkeitkonntefortplanzenundsicherfreuenanlebenslanglichfreudeundruhemitnichteinfurchtvorangreifenvonandererintelligentgeschopfsvonhinzwischensternartigraum, senior"
+
+print ('')
+in_string  = in_string.lstrip() 
+res_name = ''
+
+if len(in_string) < 1 :
+    print ("Name is empty")
+elif len(in_string) > 999 :
+    print ("Name is so big")
+else:
+    name = in_string.split()
+    print ("Name is:", end = " ")
+    for word in name : res_name += word.capitalize() + ' '
+    res_name = res_name.rstrip()
+    print ("Name is: ", res_name)
